@@ -59,3 +59,4 @@ writter = csv.writer(file)
 writter.writerow(["작품 명", "가격"])
 for title, price in zip(result_title[0], result_price[0]):
     writter.writerow([title, price])
+file.close()
